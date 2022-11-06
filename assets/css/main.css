@@ -40,7 +40,7 @@ body {
 		font-size: 1em;
 		color: #3baef1;
 		width: 350px;
-		border-right: 2px solid rgba(0, 0, 0, 0.87);
+		border-right: 2px solid rgba(0, 112, 164, 0.87);
 		animation: animacionIntro 3.5s steps(35) infinite alternate,
 		  animacionBar 3.5s;
 	  }
@@ -2592,7 +2592,7 @@ iframe{
 			color: #312450;
 			text-align: center;
 			line-height: 2.5em;
-			margin: 0 0 1.3em 150px;
+			margin: auto;
 			font-size: 30px;
 		}
 
