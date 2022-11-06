@@ -17,7 +17,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	color: rgb(196, 196, 196);
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2054,7 +2056,7 @@ iframe{
 	}
 
 		.features section {
-			padding: 3.5em 5em 1em 7em ;
+			padding: 3.5em 5em 1em 5em ;
 			width: 50%;
 			border-top: solid 1px rgba(255, 255, 255, 0.204);
 			position: relative;
@@ -3833,7 +3835,7 @@ iframe{
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.491);
+			color: rgb(150, 150, 150);
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
