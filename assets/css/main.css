@@ -23,9 +23,46 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+	#particles-js{
+		height: 100vh;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+	}
+
 body {
 	line-height: 1;
 }
+	.entrada {
+		overflow: hidden;
+		font-family: Helvetica, sans-serif;
+		white-space: nowrap;
+		font-size: 1em;
+		color: #3baef1;
+		width: 350px;
+		border-right: 2px solid rgba(0, 0, 0, 0.87);
+		animation: animacionIntro 3.5s steps(35) infinite alternate,
+		  animacionBar 3.5s;
+	  }
+	  
+	  @keyframes animacionIntro {
+		0% {
+		  width: 0;
+		}
+		100% {
+		  width: 415px;
+		}
+	  }
+	  
+	  @keyframes animacionBar {
+		0%,
+		100% {
+		  border-color: rgba(241, 59, 59, 0);
+		}
+		50% {
+		  border-color: rgba(59, 195, 241, 0.87);
+		}
+	  }
 
 ol, ul {
 	list-style: none;
@@ -60,6 +97,7 @@ input::-moz-focus-inner {
 }
 div.inner{
 	border-radius: 5px;
+	z-index: 20;
 }
 
 input, select, textarea {
@@ -67,10 +105,12 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+	z-index: 20;
 }
 iframe{
 	margin: 10px 10px 5px 0;
 	border-radius: 10px;
+	z-index: 20;
 }
 /* Basic */
 
@@ -138,6 +178,7 @@ iframe{
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
+		z-index: 20;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1868,6 +1909,7 @@ iframe{
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		z-index: 20;
 	}
 
 		input[type="submit"]:after,
@@ -3020,6 +3062,7 @@ iframe{
 		-ms-flex-direction: row;
 		flex-direction: row;
 		min-height: 22.5em;
+		z-index: 20;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3035,11 +3078,13 @@ iframe{
 			width: 25em;
 			margin: 0;
 			border-radius: 5px;
+			z-index: 20;
 		}
 
 			.spotlights > section > .image img {
 				border-radius: 0;
 				display: block;
+				z-index: 20;
 			}
 
 			.spotlights > section > .image:before {
@@ -3056,6 +3101,7 @@ iframe{
 				position: absolute;
 				top: 0;
 				width: 100%;
+				z-index: 20;
 			}
 
 		.spotlights > section > .content {
@@ -3074,6 +3120,7 @@ iframe{
 			justify-content: center;
 			width: 50em;
 			-ms-flex: 1;
+			z-index: 20;
 		}
 
 			.spotlights > section > .content > .inner {
